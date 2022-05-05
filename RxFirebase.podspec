@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'RxFirebase'
-    s.version          = '0.4'
+    s.version          = '0.5'
     s.summary          = 'RxSwift extensions for Firebase.'
 
     # This description is used to generate tags and improve search results.
@@ -35,27 +35,27 @@ Pod::Spec.new do |s|
     s.swift_versions = '5.0'
 
     s.subspec 'Firestore' do |firestore|
-        firestore.dependency 'RxFirebaseFirestore', '~> 0.4'
+        firestore.dependency 'RxFirebaseFirestore', '~> 0.5'
         firestore.source_files = 'Sources/Core/Firestore.swift'
     end
     s.subspec 'RemoteConfig' do |remote|
-        remote.dependency 'RxFirebaseRemoteConfig', '~> 0.4'
+        remote.dependency 'RxFirebaseRemoteConfig', '~> 0.5'
         remote.source_files = 'Sources/Core/RemoteConfig.swift'
     end
     s.subspec 'Database' do |database|
-        database.dependency 'RxFirebaseDatabase', '~> 0.4'
+        database.dependency 'RxFirebaseDatabase', '~> 0.5'
         database.source_files = 'Sources/Core/Database.swift'
     end
     s.subspec 'Storage' do |storage|
-        storage.dependency 'RxFirebaseStorage', '~> 0.4'
+        storage.dependency 'RxFirebaseStorage', '~> 0.5'
         storage.source_files = 'Sources/Core/Storage.swift'
     end
     s.subspec 'Functions' do |functions|
-        functions.dependency 'RxFirebaseFunctions', '~> 0.4'
+        functions.dependency 'RxFirebaseFunctions', '~> 0.5'
         functions.source_files = 'Sources/Core/Functions.swift'
     end
     s.subspec 'Auth' do |auth|
-        auth.dependency 'RxFirebaseAuthentication', '~> 0.4'
+        auth.dependency 'RxFirebaseAuthentication', '~> 0.5'
         auth.source_files = 'Sources/Core/Auth.swift'
     end
 end
