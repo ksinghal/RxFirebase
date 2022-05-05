@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'RxFirebaseDatabase'
-    s.version          = '0.4'
+    s.version          = '0.5'
     s.summary          = 'RxSwift extensions for FirebaseDatabase.'
 
     # This description is used to generate tags and improve search results.
@@ -26,9 +26,9 @@ Pod::Spec.new do |s|
     s.tvos.deployment_target = '10.0'
 
     s.static_framework = true
-    s.dependency 'RxSwift', '~> 6.1'
-    s.dependency 'RxCocoa', '~> 6.1'
-    s.dependency 'FirebaseDatabase', '~> 8'
+    s.dependency 'RxSwift', '~> 6'
+    s.dependency 'RxCocoa', '~> 6'
+    s.dependency 'FirebaseDatabase', '~> 9'
 
     s.source_files = 'Sources/Database/**/*'
 end
